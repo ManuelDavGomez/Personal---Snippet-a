@@ -21,7 +21,7 @@ const Nav = () => {
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </label>
-      <a href="#" class="logo">
+      <a href="/" class="logo">
         Snippetía
       </a>
       <input type="checkbox" id="chkToggle"></input>
@@ -52,6 +52,8 @@ const Nav = () => {
           </a>
         </li>
       </ul>
+
+      <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Empezar gratis</button>
     </nav>
   );
 };

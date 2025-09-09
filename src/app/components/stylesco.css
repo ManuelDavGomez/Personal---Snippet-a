@@ -11,6 +11,22 @@
   position: fixed;
   width: 100%;
   z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: none;
 }
 
 .main-nav {
@@ -26,14 +42,13 @@
 
 .main-nav li {
   text-align: center;
-  margin: 15px auto;
+  margin: 35px auto;
 }
 
 .logo {
   display: inline-block;
   font-size: 22px;
   margin-top: 10px;
-  margin-left: 20px;
 }
 
 .navbar-toggle {
@@ -53,13 +68,20 @@
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
+    padding: 0px 20px;
     height: 70px;
     align-items: center;
+    flex-direction: row;
+  }
+
+  .navbar button {
+    margin-bottom: 0;
+    display: inline-block;
   }
 
   #chkToggle:checked + ul.main-nav {

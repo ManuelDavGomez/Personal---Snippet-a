@@ -6,42 +6,39 @@
   --accent: #FF7A59;
   --background: #0F172A;
   --text-primary: #F1F5F9;
-  --text-secondary: #94A3B8;
+  --text-secondary: #6a7282;
 }
+
+
+@keyframes levitate {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-levitate {
+  animation: levitate 3s ease-in-out infinite;
+}
+
 
 *{
   box-sizing: border-box;
   scroll-behavior: smooth;
-
+ 
 }
 
 body {
   background: var(--background);
 }
 
-
-h1{
-  font-size: 52px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "poppins", sans-serif;
 }
 
-h2{
-  font-size: 28px;
+p, span, a, li, div {
+  font-family: "inter", sans-serif;
 }
-
-h3{
-  font-size: 24px;
-}
-
-h4{
-  font-size: 20px;
-}
-
-h5{
-  font-size: 16px;
-}
-
-h6{
-  font-size: 14px;
-}
-
 

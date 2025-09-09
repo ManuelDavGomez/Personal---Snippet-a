@@ -1,41 +1,107 @@
 import PagesLayout from "./PagesLayout.jsx";
+import FastPng from "@/app/assets/fast.png";
+import Image from "next/image.js";
+import "./globals.css";
 
 export default function Home() {
-  return (
+  return ( 
     <>
       <PagesLayout>
-        <section className="min-h-fit flex flex-col justify-center items-center mb-100">
-          <h1 className="text-center font-bold">Bienvenidos a Snippetía</h1>
-          <h2 className="text-center mt-3 text-[var(--text-secondary)]">
-            Snippets listos para copiar. Organiza. Prueba. Reutiliza.
-          </h2>
-        </section>
+        <body class="text-gray-900">
+          <section class=" text-center">
+            <h1 class="text-5xl font-extrabold mb-4">
+              Código listo. Problemas resueltos.
+            </h1>
+            <p class="text-lg mb-6 max-w-2xl mx-auto text-[var(--text-secondary)]">
+              SnippetHub es la biblioteca inteligente de snippets, plantillas y
+              packs creada para desarrolladores que quieren ahorrar tiempo,
+              evitar errores comunes y mantener buenas prácticas.
+            </p>
+            <section class="space-x-4">
+              <a
+                href="#"
+                class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold"
+              >
+                Empezar gratis
+              </a>
+              <a
+                href="#"
+                class="px-6 py-3 rounded-lg border border-gray-300 font-semibold"
+              >
+                Explorar snippets
+              </a>
+            </section>
+            <p class="mt-4 text-sm text-gray-500">
+              Sin tarjeta, acceso inmediato. Exporta a VS Code o GitHub en un
+              clic. 
+            </p>
+          </section>
 
-        <section>
-          Aute adipisicing ullamco ipsum elit ea veniam ut consequat. Voluptate
-          nostrud duis exercitation aliquip officia consectetur. Minim voluptate
-          labore commodo ad irure consectetur do et est. Ipsum do anim nostrud
-          enim. Enim irure veniam pariatur qui mollit deserunt nulla exercitation in fugiat est. Est amet amet aliquip amet sit dolore minim commodo occaecat mollit id nostrud. Esse magna amet velit enim reprehenderit ut duis in aute proident do excepteur. Quis tempor minim nostrud nostrud. Nulla nisi esse enim dolor eu adipisicing eu nulla culpa mollit enim sint. Laborum proident occaecat cillum anim. Veniam sit eiusmod consectetur cupidatat esse velit.
+          <section class="py-70 max-w-5xl mx-auto text-center text-gray-500">
+            <h2 class="text-4xl font-bold mb-6">
+              Lo que necesitas para entregar más rápido
+            </h2>
+            <p class="text-[var(--text-secondary)]">
+              SnippetHub reúne snippets verificados, templates listos y packs
+              organizados por stack y caso de uso. Cada fragmento viene con
+              descripción, dependencias sugeridas, tests de ejemplo y un sandbox
+              donde probar antes de copiar.
+            </p> 
 
-Irure mollit tempor excepteur tempor enim laborum aliquip nostrud aute dolor exercitation deserunt. Aute qui sit pariatur voluptate. Enim laborum dolore voluptate cillum irure deserunt do cillum aute enim proident et sint consequat. Laboris laboris magna laboris enim consequat exercitation mollit. Dolore consequat pariatur in minim commodo nostrud qui aliquip adipisicing. Amet nulla laboris in enim. Voluptate dolore anim amet veniam dolore amet.
+            <div class="mt-10">
+              <Image
+                src={FastPng}
+                alt="Imagen representativa de velocidad"
+                class="mx-auto animate-levitate"
+                width={400}
+                height={400}
+              />
+            </div>
+          </section>
 
-Tempor incididunt eu nostrud sunt. Nisi excepteur dolore dolore et do mollit sit magna duis. Aute dolor eu cillum Lorem quis deserunt laborum anim reprehenderit anim dolor est sunt. Mollit ullamco in aliqua pariatur sit laborum voluptate labore incididunt reprehenderit amet id Lorem exercitation. Aliqua dolor non esse dolore laboris. Labore consectetur incididunt reprehenderit tempor ipsum. Duis laboris elit dolor eu do exercitation quis.
-
-In sunt occaecat aliquip quis proident ipsum cupidatat culpa nisi. Magna pariatur fugiat occaecat incididunt consectetur fugiat eu nostrud occaecat ea aliqua sunt. Fugiat reprehenderit minim consequat ullamco est cillum proident deserunt sint. Labore fugiat commodo proident esse quis aliqua non Lorem in proident fugiat. Sunt proident occaecat sunt officia. Cupidatat amet sunt commodo eiusmod id in officia laborum in deserunt nostrud ut quis. Dolore duis occaecat sit ullamco pariatur proident consectetur.
-
-Consequat incididunt anim duis nisi nostrud magna. Est aliquip deserunt anim eu incididunt irure excepteur ut. Eu nostrud consectetur ipsum qui labore eu eu adipisicing ea sit.
-
-Id non sint cillum cillum cillum non. Ad culpa enim minim est et. Ad qui do do do ex. Adipisicing quis sunt velit ad aute voluptate sunt cupidatat consequat eu. Sunt in Lorem nostrud eu adipisicing commodo mollit.
-
-Amet cillum enim nostrud quis id tempor exercitation cupidatat aute esse aliqua elit. Consectetur culpa ea irure eu sunt adipisicing aliqua exercitation anim id. Proident adipisicing proident non commodo irure irure minim ullamco sit aliquip nisi et duis labore.
-
-Occaecat reprehenderit consectetur tempor do adipisicing Lorem ad. Mollit tempor amet sunt magna nostrud culpa do quis occaecat ut. Voluptate cillum cillum minim excepteur ad ut mollit aute. Ut aliquip qui do ipsum nostrud ullamco culpa veniam et commodo. Est exercitation non cillum esse do sunt non reprehenderit. Esse laborum laborum mollit deserunt eiusmod esse occaecat deserunt amet et anim. Nulla sunt proident non qui tempor sint irure pariatur.
-
-Nostrud sunt anim exercitation est laborum in ea culpa. Quis qui nostrud minim do duis. Exercitation exercitation amet tempor non non velit ea officia aute qui ipsum eiusmod mollit.
-
-Anim eiusmod in voluptate est incididunt. Ad eiusmod consectetur voluptate occaecat voluptate quis Lorem exercitation elit non cupidatat. Cillum nisi aliquip irure officia eu anim labore. Incididunt velit cillum proident magna proident ad cupidatat ut reprehenderit minim esse. Labore nulla occaecat minim sint deserunt enim proident Lorem enim ex consequat proident id. Amet eu adipisicing ad laboris minim aute in. In voluptate consectetur dolore excepteur sunt consectetur exercitation veniam ullamco reprehenderit sit qui id.
-        </section>
+          <section class="py-0">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+              Características destacadas
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+              <div class="p-6  rounded-xl shadow">
+                <h3 class="font-semibold mb-2">Playground instantáneo</h3>
+                <p>Edita y ejecuta el snippet sin salir de la página.</p>
+              </div>
+              <div class="p-6  rounded-xl shadow">
+                <h3 class="font-semibold mb-2">Copiar con contexto</h3>
+                <p>
+                  Copia un snippet junto a importaciones y configuración mínima
+                  necesaria.
+                </p>
+              </div>
+              <div class="p-6 rounded-xl shadow">
+                <h3 class="font-semibold mb-2">Packs y Collections</h3>
+                <p>Agrupa snippets en starters para proyectos completos.</p>
+              </div>
+              <div class="p-6 rounded-xl shadow">
+                <h3 class="font-semibold mb-2">Integraciones Editor</h3>
+                <p>
+                  Guarda y sincroniza desde VS Code o JetBrains con un plugin.
+                </p>
+              </div>
+              <div class="p-6  rounded-xl shadow">
+                <h3 class="font-semibold mb-2">Validación y seguridad</h3>
+                <p>
+                  Linter automático y chequeos de vulnerabilidades para evitar
+                  dependencias inseguras.
+                </p>
+              </div>
+              <div class="p-6 rounded-xl shadow">
+                <h3 class="font-semibold mb-2">Inteligencia contextual</h3>
+                <p>
+                  Recomendaciones basadas en tu código (solo si lo autorizas).
+                </p>
+              </div>
+            </div>
+          </section>
+        </body>
       </PagesLayout>
-    </>
+    </> 
   );
 }
