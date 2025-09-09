@@ -37,7 +37,7 @@ export default function Home() {
             </p>
           </section>
 
-          <section class="py-70 max-w-5xl mx-auto text-center text-gray-500">
+          <section class="py-70 max-w-5xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-6">
               Lo que necesitas para entregar más rápido
             </h2>
