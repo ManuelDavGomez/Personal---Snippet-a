@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root{
+  --primary: #0066FF;
+  --secondary: #0BBF7A;
+  --accent: #FF7A59;
+  --background: #0F172A;
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+}
+
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  background: var(--background);
+}
+
+
+h1{
+  font-size: 52px;
+}
+
+h2{
+  font-size: 28px;
+}
+
+h3{
+  font-size: 24px;
+}
+
+h4{
+  font-size: 20px;
+}
+
+h5{
+  font-size: 16px;
+}
+
+h6{
+  font-size: 14px;
+}
+
+
