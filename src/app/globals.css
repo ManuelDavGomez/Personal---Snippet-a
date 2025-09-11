@@ -7,11 +7,11 @@
   --background: #0F172A;
   --text-primary: #F1F5F9;
   --text-secondary: #6a7282;
-}
-
+  --border-color: #28374e;
+} 
 
 @keyframes levitate {
-  0%, 100% {
+  0%, 100% { 
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);

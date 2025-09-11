@@ -27,29 +27,14 @@ const Nav = () => {
       <input type="checkbox" id="chkToggle"></input>
       <ul class="main-nav" id="js-menu">
         <li>
-          <a href="#" class="nav-links">
-            Home
-          </a>
+          <Link href="/" class="nav-links">
+            Inicio
+          </Link>
         </li>
         <li>
-          <a href="#" class="nav-links">
-            Products
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-links">
-            About Us
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-links">
-            Contact Us
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-links">
-            Blog
-          </a>
+          <Link href="/library" class="nav-links">
+            Libreria
+          </Link>
         </li>
       </ul>
 
