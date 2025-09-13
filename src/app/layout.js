@@ -1,6 +1,7 @@
 import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav";
+import Foot from "./components/Foot";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -26,6 +27,8 @@ export default function RootLayout({ children }) {
         <Nav />
 
         {children}
+
+        <Foot />
       </body>
     </html>
   );

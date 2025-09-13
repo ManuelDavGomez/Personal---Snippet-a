@@ -1,54 +1,72 @@
 @import "tailwindcss";
 
-:root{
-  --primary: #0066FF;
-  --secondary: #0BBF7A;
-  --accent: #FF7A59;
-  --background: #0F172A;
-  --text-primary: #F1F5F9;
+:root {
+  --primary: #0066ff;
+  --secondary: #0bbf7a;
+  --accent: #ff7a59;
+  --background: #0f172a;
+  --text-primary: #f1f5f9;
   --text-secondary: #6a7282;
   --border-color: #28374e;
-} 
+}
 
 @keyframes levitate {
-  0%, 100% { 
+  0%,
+  100% {
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
-}
+  }
   50% {
     transform: translateY(-15px);
     -webkit-transform: translateY(-15px);
     -moz-transform: translateY(-15px);
     -ms-transform: translateY(-15px);
     -o-transform: translateY(-15px);
-}
+  }
 }
 
 .animate-levitate {
   animation: levitate 3s ease-in-out infinite;
 }
 
-
-*{
+* {
   box-sizing: border-box;
   scroll-behavior: smooth;
- 
 }
 
 body {
   background: var(--background);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "poppins", sans-serif;
   color: #fff;
 }
 
-p, span, li, div {
+p,
+span,
+li,
+div {
   font-family: "inter", sans-serif;
   color: var(--text-secondary);
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}

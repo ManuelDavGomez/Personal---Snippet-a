@@ -38,7 +38,7 @@ export default function Home() {
             </p>
           </section>
 
-          <section class="py-70 max-w-5xl mx-auto text-center">
+          <section class="pt-70 max-w-5xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-6">
               Lo que necesitas para entregar más rápido
             </h2>
@@ -59,6 +59,78 @@ export default function Home() {
               />
             </div>
           </section>
+
+          <div class="relative w-full overflow-hidden py-30">
+            <div class="flex w-max animate-scroll">
+              <div class="flex space-x-4 px-4 text-white">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #javascript
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #react
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #nodejs
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #graphql
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #tailwindcss
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #docker
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #typescript
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #firebase
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #api-rest
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #jwt-auth
+                </span>
+              </div>
+              <div class="flex space-x-4 px-4">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #javascript
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #react
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #nodejs
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #graphql
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #tailwindcss
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #docker
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #typescript
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #firebase
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #api-rest
+                </span>
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                  #jwt-auth
+                </span>
+              </div>
+            </div>
+
+            <div class="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0f172a] to-transparent"></div>
+            <div class="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#0f172a] to-transparent"></div>
+          </div>
 
           <section class="py-0">
             <h2 class="text-3xl font-bold mb-12 text-center">
@@ -193,7 +265,7 @@ export default function Home() {
             </article>
           </section>
 
-          <article className="py-70">
+          <article className="pt-70 pb-[140px]">
             <h2 className="text-3xl font-bold text-center">¿Cómo funciona?</h2>
             <section class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto items-center">
               <section>
