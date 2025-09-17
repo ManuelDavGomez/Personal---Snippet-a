@@ -128,8 +128,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div class="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0f172a] to-transparent"></div>
-            <div class="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#0f172a] to-transparent"></div>
+            <div class="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[var(--background)] to-transparent"></div>
+            <div class="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[var(--background)] to-transparent"></div>
           </div>
 
           <section class="py-0">
@@ -137,7 +137,7 @@ export default function Home() {
               Características destacadas
             </h2>
             <article class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)]">
+              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)] bg-[#0B1223]">
                 <section className="mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +159,7 @@ export default function Home() {
                 <p>Copia y pega snippets listos para usar.</p>
               </section>
 
-              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)]">
+              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)] bg-[#0B1223]">
                 <section className="mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +180,7 @@ export default function Home() {
                 <p>Snippets con el código mínimo necesario.</p>
               </section>
 
-              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)]">
+              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)] bg-[#0B1223]">
                 <section className="mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +201,7 @@ export default function Home() {
                 <p>Agrupa snippets por categorías útiles.</p>
               </section>
 
-              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)]">
+              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)] bg-[#0B1223]">
                 <section className="mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -221,7 +221,7 @@ export default function Home() {
                 <p>Conéctalo fácilmente con tu editor.</p>
               </section>
 
-              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)]">
+              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)] bg-[#0B1223]">
                 <section className="mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -243,7 +243,7 @@ export default function Home() {
                 <p>Revisados para evitar errores comunes.</p>
               </section>
 
-              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)]">
+              <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)] bg-[#0B1223]">
                 <section className="mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

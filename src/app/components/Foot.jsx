@@ -5,7 +5,7 @@ import Icon from "@/app/icon1.png";
 const Foot = () => {
   return (
     <>
-      <footer className="bg-gray-50 dark:bg-gray-900 text-gray-700 dark:text-gray-200 border-t border-gray-200 dark:border-gray-800">
+      <footer className=" bg-[var(--background)] text-gray-700 dark:text-gray-200 border-t border-[#314a867d] dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
             {/* Brand + short description */}
