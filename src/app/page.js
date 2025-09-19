@@ -14,9 +14,9 @@ export default function Home() {
               Código listo. Problemas resueltos.
             </h1>
             <p class="text-lg mb-6 max-w-2xl mx-auto text-[var(--text-secondary)]">
-              Snippetía es la biblioteca inteligente de snippets, plantillas y
-              packs creada para desarrolladores que quieren ahorrar tiempo,
-              evitar errores comunes y mantener buenas prácticas.
+              Snippetía es la biblioteca inteligente de snippets, creada para
+              desarrolladores que quieren ahorrar tiempo, evitar errores comunes
+              y mantener buenas prácticas.
             </p>
             <section class="space-x-4">
               <a
@@ -33,8 +33,7 @@ export default function Home() {
               </a>
             </section>
             <p class="mt-4 text-sm text-gray-500">
-              Sin tarjeta, acceso inmediato. Exporta a VS Code o GitHub en un
-              clic.
+              Sin tarjeta, acceso inmediato. Copia a VS Code en un clic.
             </p>
           </section>
 
@@ -43,10 +42,9 @@ export default function Home() {
               Lo que necesitas para entregar más rápido
             </h2>
             <p class="text-[var(--text-secondary)]">
-              Snippetía reúne snippets verificados, templates listos y packs
-              organizados por stack y caso de uso. Cada fragmento viene con
-              descripción, dependencias sugeridas, tests de ejemplo y un sandbox
-              donde probar antes de copiar.
+              Snippetía reúne snippets, organizados. Cada fragmento viene con
+              descripción y etiquetas para encontrarlo fácil. Pruébalos y me
+              dices qué te parece.
             </p>
 
             <div class="mt-10">
@@ -63,66 +61,66 @@ export default function Home() {
           <div class="relative w-full overflow-hidden py-30">
             <div class="flex w-max animate-scroll">
               <div class="flex space-x-4 px-4 text-white">
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #javascript
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #react
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #nodejs
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #graphql
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #tailwindcss
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #docker
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #typescript
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #firebase
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #api-rest
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #jwt-auth
                 </span>
               </div>
               <div class="flex space-x-4 px-4">
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #javascript
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #react
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #nodejs
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #graphql
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #tailwindcss
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #docker
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #typescript
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #firebase
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #api-rest
                 </span>
-                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white shadow-lg">
+                <span class="px-5 py-2 rounded-full backdrop-blur-md bg-[#0B1223] border border[var(--border-color)] text-white shadow-lg">
                   #jwt-auth
                 </span>
               </div>
@@ -197,8 +195,8 @@ export default function Home() {
                     <path d="M14 3v5h5M16 13H8M16 17H8M10 9H8" />
                   </svg>
                 </section>
-                <h3 class="font-semibold mb-2">Packs y Collections</h3>
-                <p>Agrupa snippets por categorías útiles.</p>
+                <h3 class="font-semibold mb-2">Organización</h3>
+                <p>Los snippets están organizados por categorías útiles.</p>
               </section>
 
               <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)] bg-[#0B1223]">
@@ -218,7 +216,7 @@ export default function Home() {
                   </svg>
                 </section>
                 <h3 class="font-semibold mb-2">Integración sencilla</h3>
-                <p>Conéctalo fácilmente con tu editor.</p>
+                <p>Copialo fácilmente a tu editor.</p>
               </section>
 
               <section class="p-6 rounded-xl shadow border-double border-4 border-[var(--border-color)] bg-[#0B1223]">
@@ -286,14 +284,13 @@ export default function Home() {
 
                 <h2>Probar y copiar</h2>
                 <p>
-                  Prueba snippets en el sandbox integrado. Copia con un clic el
-                  código limpio y listo para usar.
+                  Prueba snippets. Copia con un clic el código limpio y listo
+                  para usar.
                 </p>
 
                 <h2>Integrar</h2>
                 <p>
-                  Usa nuestra extensión para VS Code o GitHub Copilot para
-                  insertar snippets directamente en tu flujo de trabajo.
+                  Pega el snippet en tu proyecto. Ahorra tiempo y evita errores
                 </p>
               </section>
             </section>

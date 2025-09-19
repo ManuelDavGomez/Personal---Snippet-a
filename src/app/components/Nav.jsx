@@ -32,8 +32,8 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link href="/library" class="nav-links">
-            Libreria
+          <Link href="/pages/biblioteca" class="nav-links">
+            Biblioteca
           </Link>
         </li>
       </ul>

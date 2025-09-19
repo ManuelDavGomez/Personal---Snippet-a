@@ -1,0 +1,28 @@
+{
+  "snippets": [
+    {
+      "id": 1,
+      "title": "Copiar al portapapeles",
+      "description": "Un simple copia",
+      "code": "navigator.clipboard.writeText(\"Texto a copiar\");",
+      "language": "JavaScript",
+      "tags": ["inicio", "javascript", "básico"]
+    },
+    {
+      "id": 2,
+      "title": "Comprobar si un objeto está vacío",
+      "description": "Una función que comprueba si un objeto está vacío.",
+      "code": "Object.keys(obj).length === 0;",
+      "language": "JavaScript",
+      "tags": ["función", "javascript", "básico"]
+    },
+    {
+      "id": 3,
+      "title": "Generar un número aleatorio en un rango",
+      "description": "Una función que genera un número aleatorio entre dos valores.",
+      "code": "const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;",
+      "language": "JavaScript",
+      "tags": ["función", "javascript", "básico"]
+    }
+  ]
+}

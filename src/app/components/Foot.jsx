@@ -24,36 +24,6 @@ const Foot = () => {
                 <a
                   href="#"
                   className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
-                  aria-label="Twitter"
-                >
-                  <svg
-                    className="w-5 h-5"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    aria-hidden
-                  >
-                    <path d="M8 19c7.732 0 11.965-6.4 11.965-11.935 0-.182 0-.364-.013-.545A8.553 8.553 0 0 0 22 4.557a8.19 8.19 0 0 1-2.356.647A4.113 4.113 0 0 0 21.447 3.1a8.224 8.224 0 0 1-2.605.996A4.103 4.103 0 0 0 11.1 7.29a11.64 11.64 0 0 1-8.457-4.287 4.103 4.103 0 0 0 1.27 5.475A4.07 4.07 0 0 1 2 8.753v.052a4.103 4.103 0 0 0 3.291 4.02 4.093 4.093 0 0 1-1.853.07 4.105 4.105 0 0 0 3.833 2.847A8.233 8.233 0 0 1 2 17.542a11.616 11.616 0 0 0 6.29 1.84" />
-                  </svg>
-                </a>
-
-                <a
-                  href="#"
-                  className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
-                  aria-label="YouTube"
-                >
-                  <svg
-                    className="w-5 h-5"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    aria-hidden
-                  >
-                    <path d="M23.5 6.2a3 3 0 0 0-2.12-2.13C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.38.57A3 3 0 0 0 .5 6.2 31.35 31.35 0 0 0 0 12a31.35 31.35 0 0 0 .5 5.8 3 3 0 0 0 2.12 2.13C4.4 20.5 12 20.5 12 20.5s7.6 0 9.38-.57A3 3 0 0 0 23.5 17.8 31.35 31.35 0 0 0 24 12a31.35 31.35 0 0 0-.5-5.8zM9.75 15.02V8.98L16 12l-6.25 3.02z" />
-                  </svg>
-                </a>
-
-                <a
-                  href="#"
-                  className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
                   aria-label="GitHub"
                 >
                   <svg
@@ -69,99 +39,30 @@ const Foot = () => {
             </div>
 
             {/* Links grid */}
-            <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-6">
+            <div className="flex-1 gap-6">
               <div>
                 <h4 className="text-sm font-semibold">Producto</h4>
                 <ul className="mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-300">
                   <li>
                     <a className="hover:underline" href="#">
-                      Características
+                      Inicio
                     </a>
                   </li>
                   <li>
                     <a className="hover:underline" href="#">
-                      Precios
-                    </a>
-                  </li>
-                  <li>
-                    <a className="hover:underline" href="#">
-                      Novedades
+                      Libreria
                     </a>
                   </li>
                 </ul>
               </div>
-
-              <div>
-                <h4 className="text-sm font-semibold">Compañía</h4>
-                <ul className="mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                  <li>
-                    <a className="hover:underline" href="#">
-                      Sobre nosotros
-                    </a>
-                  </li>
-                  <li>
-                    <a className="hover:underline" href="#">
-                      Carreras
-                    </a>
-                  </li>
-                  <li>
-                    <a className="hover:underline" href="#">
-                      Contacto
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="text-sm font-semibold">Recursos</h4>
-                <ul className="mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                  <li>
-                    <a className="hover:underline" href="#">
-                      Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a className="hover:underline" href="#">
-                      Guías
-                    </a>
-                  </li>
-                  <li>
-                    <a className="hover:underline" href="#">
-                      Soporte
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Newsletter / CTA */}
-            <div className="flex-1 min-w-0">
-              <h4 className="text-sm font-semibold">Suscríbete</h4>
-              <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
-                Recibe actualizaciones mensuales con lo último y mejores tips.
-              </p>
-
-              <p className="mt-4 text-xs text-gray-500">
-                Puedes darte de baja en cualquier momento.
-              </p>
             </div>
           </div>
 
           <div className="mt-10 pt-6 border-t border-gray-200 dark:border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              © {new Date().getFullYear()} MiMarca. Todos los derechos
+              © {new Date().getFullYear()} Snipettía. Todos los derechos
               reservados.
             </p>
-
-            <div className="flex items-center gap-4 text-sm">
-              <a href="#" className="hover:underline">
-                Política de privacidad
-              </a>
-              <span className="hidden sm:block">•</span>
-              <a href="#" className="hover:underline">
-                Términos
-              </a>
-            </div>
           </div>
         </div>
       </footer>
