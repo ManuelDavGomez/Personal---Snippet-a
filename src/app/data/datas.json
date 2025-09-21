@@ -1,28 +1,121 @@
 {
-  "snippets": [
+  "categorias": [
     {
-      "id": 1,
-      "title": "Copiar al portapapeles",
-      "description": "Un simple copia",
-      "code": "navigator.clipboard.writeText(\"Texto a copiar\");",
-      "language": "JavaScript",
-      "tags": ["inicio", "javascript", "básico"]
+      "id": "c1",
+      "nombre": "JavaScript",
+      "descripcion": "Snippets de uso común en desarrollo con JavaScript.",
+      "color": "#7D783C",
+      "snippets": [
+        {
+          "id": "js1",
+          "titulo": "Número aleatorio en rango",
+          "codigo": "const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;"
+        },
+        {
+          "id": "js2",
+          "titulo": "Clonar objeto rápido",
+          "codigo": "const copia = { ...original };"
+        },
+        {
+          "id": "js3",
+          "titulo": "Eliminar duplicados de un array",
+          "codigo": "const unico = [...new Set(array)];"
+        }
+      ]
     },
     {
-      "id": 2,
-      "title": "Comprobar si un objeto está vacío",
-      "description": "Una función que comprueba si un objeto está vacío.",
-      "code": "Object.keys(obj).length === 0;",
-      "language": "JavaScript",
-      "tags": ["función", "javascript", "básico"]
+      "id": "c2",
+      "nombre": "Node.js",
+      "descripcion": "Snippets básicos para backend con Node.js.",
+      "color": "#f0db4f",
+      "snippets": [
+        {
+          "id": "node1",
+          "titulo": "Servidor básico con Express",
+          "codigo": "const express = require('express');\nconst app = express();\napp.get('/', (req, res) => res.send('Hola Mundo'));\napp.listen(3000);"
+        },
+        {
+          "id": "node2",
+          "titulo": "Leer JSON del body",
+          "codigo": "app.use(express.json());"
+        },
+        {
+          "id": "node3",
+          "titulo": "Cargar variables de entorno",
+          "codigo": "require('dotenv').config();\nconst port = process.env.PORT || 3000;"
+        }
+      ]
     },
     {
-      "id": 3,
-      "title": "Generar un número aleatorio en un rango",
-      "description": "Una función que genera un número aleatorio entre dos valores.",
-      "code": "const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;",
-      "language": "JavaScript",
-      "tags": ["función", "javascript", "básico"]
+      "id": "c3",
+      "nombre": "SQL",
+      "descripcion": "Consultas SQL útiles en el día a día.",
+      "color": "#1C3D59",
+      "snippets": [
+        {
+          "id": "sql1",
+          "titulo": "Top 10 registros recientes",
+          "codigo": "SELECT * FROM tabla ORDER BY fecha DESC LIMIT 10;"
+        },
+        {
+          "id": "sql2",
+          "titulo": "Contar registros por categoría",
+          "codigo": "SELECT categoria, COUNT(*) FROM productos GROUP BY categoria;"
+        },
+        {
+          "id": "sql3",
+          "titulo": "Actualizar un campo",
+          "codigo": "UPDATE usuarios SET activo = 1 WHERE id = 5;"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "nombre": "Git",
+      "descripcion": "Comandos Git de uso frecuente.",
+      "color": "#f0db4f",
+      "snippets": [
+        {
+          "id": "git1",
+          "titulo": "Iniciar repo y primer commit",
+          "codigo": "git init\ngit add .\ngit commit -m 'Primer commit'"
+        },
+        {
+          "id": "git2",
+          "titulo": "Crear nueva rama",
+          "codigo": "git checkout -b feature/rama-nueva"
+        },
+        {
+          "id": "git3",
+          "titulo": "Resetear último commit",
+          "codigo": "git reset --hard HEAD~1"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "nombre": "css",
+      "descripcion": "Snippets rápidos para maquetado y estilos.",
+      "color": "#f0db4f",
+
+      "snippets": [
+        {
+          "id": "html1",
+          "titulo": "Centrar div con flex",
+          "codigo": ".parent {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}",
+          "languaje": "css"
+        },
+        {
+          "id": "html2",
+          "titulo": "Input requerido con placeholder",
+          "codigo": "<input type='text' placeholder='Escribe aquí' required>"
+        },
+        {
+          "id": "html3",
+          "titulo": "Botón estilizado",
+          "codigo": "<button class='btn'>Click</button>\n<style>\n  .btn {\n    padding: 10px 20px;\n    border-radius: 8px;\n    background: #007bff;\n    color: white;\n    border: none;\n  }\n</style>"
+        }
+      ]
     }
   ]
 }
