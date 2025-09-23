@@ -2,6 +2,8 @@ import data from "@/app/data/datas.json";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import PagesLayout from "@/app/PagesLayout";
+import CopyButton from "@/app/components/CodeCopy.jsx"; // 👈 importamos el botón
+import Link from "next/link";
 
 export function generateStaticParams() {
   return data.categorias.map((snippet) => ({
@@ -16,20 +18,26 @@ export default function Page({ params }) {
   }
   return (
     <PagesLayout>
-      <h1 className="text-3xl font-bold">{categoria.nombre}</h1>
+      <Link href="/pages/biblioteca" className="text-blue-500 hover:underline mb-20 inline-block">
+        &larr; Volver a la biblioteca
+      </Link>
+      <h1 className="text-3xl font-bold mb-3">{categoria.nombre}</h1>
 
-      <ul>
-        <li key={categoria.id}>{categoria.descripcion}</li>
-      </ul>
+      <h2 key={categoria.id} className="!text-gray-500">
+        {categoria.descripcion}
+      </h2>
 
-      <h2 className="text-2xl font-semibold mt-4">Snippets:</h2>
-      <section>
-        <ul className="grid grid-cols-2 md:grid-cols-2 gap-4">
+      <section className="mt-12 w-full">
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-7 w-full">
           {categoria.snippets.map((s) => (
             <li key={s.id} className="p-5 rounded bg-[#1E293B]">
-              <strong>{s.titulo}</strong>
+              <section className="flex items-center justify-between mb-5 gap-3">
+                <strong className="text-gray-300">{s.titulo}</strong>
+                {/* 👇 botón que copia el código */}
+                <CopyButton text={s.codigo} label="Copiar" />
+              </section>
 
-              <SyntaxHighlighter language={s.languaje} style={vscDarkPlus} >
+              <SyntaxHighlighter language={categoria.language} style={vscDarkPlus}>
                 {s.codigo}
               </SyntaxHighlighter>
             </li>

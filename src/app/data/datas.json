@@ -5,21 +5,28 @@
       "nombre": "JavaScript",
       "descripcion": "Snippets de uso común en desarrollo con JavaScript.",
       "color": "#7D783C",
+      "language": "javascript",
+      "logo": "https://svgl.app/library/javascript.svg",
       "snippets": [
         {
           "id": "js1",
-          "titulo": "Número aleatorio en rango",
-          "codigo": "const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;"
+          "titulo": "Copiar al portapapeles",
+          "codigo": "navigator.clipboard.writeText(\"Texto a copiar\");"
         },
         {
           "id": "js2",
-          "titulo": "Clonar objeto rápido",
-          "codigo": "const copia = { ...original };"
+          "titulo": "Comprobar si un objeto está vacío",
+          "codigo": "Object.keys(obj).length === 0;"
         },
         {
           "id": "js3",
-          "titulo": "Eliminar duplicados de un array",
-          "codigo": "const unico = [...new Set(array)];"
+          "titulo": "Generar un número aleatorio en un rango",
+          "codigo": "const random = (min, max) => \n Math.floor(Math.random() * (max - min + 1)) + min;"
+        },
+        {
+          "id": "js4",
+          "titulo": "Formatear fecha en formato local",
+          "codigo": "const formatDate = (date) => \nnew Intl.DateTimeFormat('es-ES').format(date);"
         }
       ]
     },
@@ -27,22 +34,24 @@
       "id": "c2",
       "nombre": "Node.js",
       "descripcion": "Snippets básicos para backend con Node.js.",
-      "color": "#f0db4f",
+      "color": "#1d411b",
+      "language": "javascript",
+      "logo": "https://svgl.app/library/nodejs.svg",
       "snippets": [
         {
           "id": "node1",
-          "titulo": "Servidor básico con Express",
-          "codigo": "const express = require('express');\nconst app = express();\napp.get('/', (req, res) => res.send('Hola Mundo'));\napp.listen(3000);"
+          "titulo": "Levantar servidor rápido con Express",
+          "codigo": "const express = require('express');\nconst app = express();\napp.get('/', (req, res) => res.send('Hello World'));\napp.listen(3000, () => console.log('Servidor corriendo'));"
         },
         {
           "id": "node2",
-          "titulo": "Leer JSON del body",
-          "codigo": "app.use(express.json());"
+          "titulo": "Leer variables de entorno",
+          "codigo": "require('dotenv').config();\nconst port = process.env.PORT || 3000;\n"
         },
         {
           "id": "node3",
-          "titulo": "Cargar variables de entorno",
-          "codigo": "require('dotenv').config();\nconst port = process.env.PORT || 3000;"
+          "titulo": "Manejo de errores try/catch con async",
+          "codigo": "try {\n  const data = await fetchData();\n} catch (err) {\n  console.error(err.message);\n}\n"
         }
       ]
     },
@@ -50,7 +59,9 @@
       "id": "c3",
       "nombre": "SQL",
       "descripcion": "Consultas SQL útiles en el día a día.",
-      "color": "#1C3D59",
+      "color": "#002a33",
+      "language": "sql",
+      "logo": "https://svgl.app/library/mysql.svg",
       "snippets": [
         {
           "id": "sql1",
@@ -59,13 +70,13 @@
         },
         {
           "id": "sql2",
-          "titulo": "Contar registros por categoría",
-          "codigo": "SELECT categoria, COUNT(*) FROM productos GROUP BY categoria;"
+          "titulo": "Buscar texto en columna",
+          "codigo": "SELECT * FROM usuarios WHERE nombre LIKE '%manuel%';"
         },
         {
           "id": "sql3",
-          "titulo": "Actualizar un campo",
-          "codigo": "UPDATE usuarios SET activo = 1 WHERE id = 5;"
+          "titulo": "Contar registros agrupados",
+          "codigo": "SELECT categoria, COUNT(*) \nFROM productos \nGROUP BY categoria;\n"
         }
       ]
     },
@@ -73,7 +84,9 @@
       "id": "c4",
       "nombre": "Git",
       "descripcion": "Comandos Git de uso frecuente.",
-      "color": "#f0db4f",
+      "color": "#792919",
+      "language": "bash",
+      "logo": "https://svgl.app/library/git.svg",
       "snippets": [
         {
           "id": "git1",
@@ -82,28 +95,28 @@
         },
         {
           "id": "git2",
-          "titulo": "Crear nueva rama",
-          "codigo": "git checkout -b feature/rama-nueva"
+          "titulo": "Añadir todo y hacer commit",
+          "codigo": "git add . && git commit -m 'mensaje'"
         },
         {
           "id": "git3",
-          "titulo": "Resetear último commit",
-          "codigo": "git reset --hard HEAD~1"
+          "titulo": "Subir a remoto",
+          "codigo": "git push origin main"
         }
       ]
     },
     {
       "id": "c5",
-      "nombre": "css",
+      "nombre": "CSS",
       "descripcion": "Snippets rápidos para maquetado y estilos.",
-      "color": "#f0db4f",
-
+      "color": "#14375e",
+      "language": "css",
+      "logo": "https://svgl.app/library/css_old.svg",
       "snippets": [
         {
           "id": "html1",
           "titulo": "Centrar div con flex",
-          "codigo": ".parent {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}",
-          "languaje": "css"
+          "codigo": ".parent {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}"
         },
         {
           "id": "html2",

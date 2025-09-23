@@ -27,9 +27,9 @@ const Nav = () => {
       <input type="checkbox" id="chkToggle"></input>
       <ul class="main-nav" id="js-menu">
         <li>
-          <Link href="/" class="nav-links">
+          <a href="/" class="nav-links">
             Inicio
-          </Link>
+          </a>
         </li>
         <li>
           <Link href="/pages/biblioteca" class="nav-links">
