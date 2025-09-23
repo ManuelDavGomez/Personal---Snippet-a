@@ -114,19 +114,19 @@
       "logo": "https://svgl.app/library/css_old.svg",
       "snippets": [
         {
-          "id": "html1",
+          "id": "css1",
           "titulo": "Centrar div con flex",
           "codigo": ".parent {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}"
         },
         {
-          "id": "html2",
-          "titulo": "Input requerido con placeholder",
-          "codigo": "<input type='text' placeholder='Escribe aquí' required>"
+          "id": "css2",
+          "titulo": "Texto con gradiente",
+          "codigo": ".text-gradient {\n  background: linear-gradient(to right, #ff7e5f, #feb47b);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}"
         },
         {
-          "id": "html3",
-          "titulo": "Botón estilizado",
-          "codigo": "<button class='btn'>Click</button>\n<style>\n  .btn {\n    padding: 10px 20px;\n    border-radius: 8px;\n    background: #007bff;\n    color: white;\n    border: none;\n  }\n</style>"
+          "id": "css3",
+          "titulo": "Scrollbar personalizado",
+          "codigo": "::-webkit-scrollbar {\n  width: 8px;\n}\n::-webkit-scrollbar-thumb {\n  background: #888;\n  border-radius: 4px;\n}\n::-webkit-scrollbar-thumb:hover {\n  background: #555;\n}"
         }
       ]
     }

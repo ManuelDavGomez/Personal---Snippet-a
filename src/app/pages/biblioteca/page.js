@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 
 import data from "../../data/datas.json";
 import PagesLayout from "@/app/PagesLayout";
@@ -7,13 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Page() {
-  const [copiedId, setCopiedId] = useState(null);
 
-  const copyCode = async (code, id) => {
-    await navigator.clipboard.writeText(code);
-    setCopiedId(id);
-    setTimeout(() => setCopiedId(null), 1500);
-  };
 
   return (
     <PagesLayout>
@@ -33,6 +26,7 @@ export default function Page() {
                   className=""
                   width={20}
                   height={20}
+                  loading="lazy"
                 />
               )}
               <p className=" !text-white">{snippet.nombre}</p>
