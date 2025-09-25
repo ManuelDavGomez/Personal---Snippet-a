@@ -36,14 +36,22 @@ const Nav = () => {
             Biblioteca
           </Link>
         </li>
-          <li>
+
+        <li>
+          <Link href="/pages/favoritos" class="nav-links">
+            Favoritos
+          </Link>
+        </li>
+        <li>
           <Link href="/pages/agregar" class="nav-links">
             Agregar
           </Link>
         </li>
       </ul>
 
-      <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Empezar gratis</button>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">
+        Empezar gratis
+      </button>
     </nav>
   );
 };

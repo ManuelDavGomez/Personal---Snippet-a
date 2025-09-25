@@ -4,7 +4,8 @@ import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import PagesLayout from "@/app/PagesLayout";
 import CopyButton from "@/app/components/CodeCopy.jsx"; // 👈 importamos el botón
 import Link from "next/link";
- 
+import Fav from "@/app/components/Fav";
+
 export function generateStaticParams() {
   return data.categorias.map((snippet) => ({
     id: snippet.id,
@@ -18,7 +19,10 @@ export default function Page({ params }) {
   }
   return (
     <PagesLayout>
-      <Link href="/pages/biblioteca" className="text-blue-500 hover:underline mb-20 inline-block">
+      <Link
+        href="/pages/biblioteca"
+        className="text-blue-500 hover:underline mb-20 inline-block"
+      >
         &larr; Volver a la biblioteca
       </Link>
       <h1 className="text-3xl font-bold mb-3">{categoria.nombre}</h1>
@@ -37,9 +41,14 @@ export default function Page({ params }) {
                 <CopyButton text={s.codigo} label="Copiar" />
               </section>
 
-              <SyntaxHighlighter language={categoria.language} style={coldarkDark}>
+              <SyntaxHighlighter
+                language={categoria.language}
+                style={coldarkDark}
+              >
                 {s.codigo}
               </SyntaxHighlighter>
+
+              <Fav snippetId={s.id} />
             </li>
           ))}
         </ul>
