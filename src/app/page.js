@@ -1,7 +1,9 @@
+"use client";
 import PagesLayout from "./PagesLayout.jsx";
 import FastPng from "@/app/assets/fast.png";
 import Funcion from "@/app/assets/funcion.png";
 import Image from "next/image.js";
+import Random from "./components/Random.jsx";
 import "./globals.css";
 
 export default function Home() {
@@ -261,6 +263,11 @@ export default function Home() {
                 <p>Espero que te guste y te sea útil.</p>
               </section>
             </article>
+          </section>
+
+          <section className="pt-70 pb-[140px]">
+            <h2 className="text-3xl font-bold text-center">Tu Snippet Random</h2>
+            <Random />
           </section>
 
           <article className="pt-70 pb-[140px]">

@@ -2,6 +2,7 @@ import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Foot from "./components/Foot";
+import { FavoritosProvider } from "@/app/context/FavContext.js";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -25,9 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className={`${poppins.variable} ${roboto.variable}`}>
         <Nav />
-
-        {children}
-
+        <FavoritosProvider>{children}</FavoritosProvider>
         <Foot />
       </body>
     </html>

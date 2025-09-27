@@ -20,7 +20,7 @@ const Page = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center !pt-70 pb-70">
-      <secion className="bg-[#1E293B] backdrop-blur-lg rounded-xl shadow-2xl p-8 w-full max-w-md">
+      <section className="bg-[#1E293B] backdrop-blur-lg rounded-xl shadow-2xl p-8 w-full max-w-md">
         <h1 className="text-3xl font-bold text-center text-indigo-700 mb-6">
           ¡Comparte tu Snippet!
         </h1>
@@ -90,7 +90,7 @@ const Page = () => {
         <p className="mt-6 text-xs text-center text-gray-500">
           Tus snippets serán enviados a nuestro correo y revisados manualmente.
         </p>
-      </secion>
+      </section>
     </section>
   );
 };
