@@ -33,7 +33,7 @@ export default function Random() {
     <ul className="w-full">
       <li key={snippet.id} className="p-5 rounded-2xl bg-[#1E293B] w-full">
         <section className="flex items-center justify-between mb-5 gap-3">
-          <strong className="text-gray-300 mb-5">{snippet.titulo}</strong>
+          <strong className="text-gray-300 ">{snippet.titulo}</strong>
           {/* 👇 botón que copia el código */}
           <CopyButton text={snippet.codigo} label="Copiar" />
         </section>

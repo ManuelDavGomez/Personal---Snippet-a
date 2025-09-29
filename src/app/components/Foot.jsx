@@ -44,13 +44,23 @@ const Foot = () => {
                 <h4 className="text-sm font-semibold">Producto</h4>
                 <ul className="mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-300">
                   <li>
-                    <a className="hover:underline" href="#">
+                    <a className="hover:underline" href="/">
                       Inicio
                     </a>
                   </li>
                   <li>
-                    <a className="hover:underline" href="#">
-                      Libreria
+                    <a className="hover:underline" href="/pages/biblioteca">
+                      Biblioteca
+                    </a>
+                  </li>
+                       <li>
+                    <a className="hover:underline" href="/pages/favoritos">
+                      Favoritos
+                    </a>
+                  </li>
+                       <li>
+                    <a className="hover:underline" href="/pages/agregar">
+                      Agregar
                     </a>
                   </li>
                 </ul>
