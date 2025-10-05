@@ -4,13 +4,54 @@ import FastPng from "@/app/assets/fast.png";
 import Funcion from "@/app/assets/funcion.png";
 import Image from "next/image.js";
 import Random from "./components/Random.jsx";
+import data from "./data/datas.json";
 import "./globals.css";
 
 export default function Home() {
+  const totalCategorias = data.categorias.length;
+  const totalSnippets = data.categorias.reduce(
+    (acc, cat) => acc + cat.snippets.length,
+    0
+  );
+  const promedio = totalSnippets / totalCategorias;
+  
+
   return (
     <>
       <PagesLayout>
         <body className="text-gray-900">
+          <article className="flex flex-col w-full">
+            <h1 className="text-3xl text-center font-bold text-white">
+              Resumen de tu biblioteca
+            </h1>
+
+            <section className="w-full grid grid-cols-1 md:w-[80%] lg:w-[85%] xl:w-[90%] md:grid-cols-2 lg:grid-cols-3 mx-auto gap-4 pt-10 pb-50">
+              <section className="bg-gray-900 p-5 rounded-lg">
+                <h2 className="text-lg text-gray-300 mb-3">Categorías</h2>
+                <p className="text-3xl font-bold text-blue-400">
+                  {totalCategorias}
+                </p>
+              </section>
+
+              <section className="bg-gray-900 p-5 rounded-lg">
+                <h2 className="text-lg text-gray-300 mb-3">Snippets</h2>
+                <p className="text-3xl font-bold text-blue-400">
+                  {totalSnippets}
+                </p>
+              </section>
+
+              <section className="bg-gray-900 p-5 rounded-lg">
+                <h2 className="text-lg text-gray-300 mb-3">
+                  Promedio de Snippets por Categoría
+                </h2>
+                <p className="text-3xl font-bold text-blue-400">
+                  {promedio.toFixed(2)}
+                </p>
+              </section>
+              
+            </section>
+          </article>
+
           <section className="text-center">
             <h1 className="text-5xl font-extrabold mb-4">
               Código listo. Problemas resueltos.
@@ -266,7 +307,9 @@ export default function Home() {
           </section>
 
           <section className="mt-50 w-[100%] sm:w-[90%]">
-            <h2 className="text-3xl font-bold text-center mb-12">Tu Snippet Random</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Tu Snippet Random
+            </h2>
             <Random />
           </section>
 

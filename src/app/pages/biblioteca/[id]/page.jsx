@@ -25,14 +25,16 @@ export default function Page({ params }) {
       >
         &larr; Volver a la biblioteca
       </Link>
-      <h1 className="text-3xl font-bold mb-3">{categoria.nombre}</h1>
-
-      <h2 key={categoria.id} className="!text-gray-500">
-        {categoria.descripcion}
-      </h2>
+  
+        
+        <h1 className="text-3xl font-bold mb-3">{categoria.nombre}</h1>
+        <h2 key={categoria.id} className="!text-gray-500">
+          {categoria.descripcion}
+        </h2>
+   
 
       <section className="mt-12 w-full">
-        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-7 w-full">
+        <ul className="w-full grid grid-cols-1 gap-7 md:w-[80%] lg:w-[85%] xl:w-[90%] mx-auto">
           {categoria.snippets.map((s) => (
             <li key={s.id} className="p-5 rounded-2xl bg-[#1E293B]">
               <section className="flex items-center justify-between mb-5 gap-3">
