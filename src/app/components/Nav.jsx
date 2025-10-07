@@ -21,8 +21,8 @@ const Nav = () => {
     <>
       {/* SIDEBAR - visible desde md */}
       <aside
-        className={`hidden md:flex md:flex-col bg-gray-900 text-white h-screen fixed left-0 top-0 p-4 space-y-6  ${
-          collapsed ? "w-20" : "w-60"
+        className={`hidden md:flex md:flex-col bg-gray-900 z-99 text-white h-screen fixed left-0 top-0 p-4 space-y-6  ${
+          collapsed ? "w-15" : "w-60"
         }`}
       >
         {/* Header + botón colapsar */}
@@ -93,7 +93,7 @@ const Nav = () => {
 
               {/* Tooltip visible solo si está colapsado */}
               {collapsed && (
-                <span className="absolute left-full bottom-0 top-0 px-2 py-0.5 text-sm bg-gray-800 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                <span className="absolute left-full ml-3 bottom-0 top-0 px-3 py-0.5 text-sm bg-gray-800 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                   {label}
                 </span>
               )}
@@ -101,14 +101,17 @@ const Nav = () => {
           ))}
         </ul>
 
-        {/* Botón CTA */}
-        <button
-          className={`bg-blue-600 text-white px-4 py-2 rounded-lg mt-auto transition-all duration-300 hover:bg-blue-700 cursor-pointer ${
-            collapsed ? "w-10 h-10 flex items-center justify-center" : "w-full"
+        <section
+          className={`text-white block mx-auto px-4 py-2 rounded-lg mt-auto  ${
+            collapsed ? "flex items-center justify-center" : "w-full"
           }`}
         >
-          {!collapsed ? "Empezar gratis" : "+"}
-        </button>
+          {!collapsed && (
+            <p className="text-[12px]">
+              All rights reserved ©{new Date().getFullYear()}
+            </p>
+          )}
+        </section>
       </aside>
 
       {/* NAVBAR - solo en móvil */}
@@ -155,10 +158,6 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg">
-          Empezar gratis
-        </button>
       </nav>
     </>
   );

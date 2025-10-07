@@ -204,17 +204,17 @@
       "logo": "https://svgl.app/library/expressjs.svg",
       "snippets": [
         {
-          "id": "",
+          "id": "ex1",
           "titulo": "Ruta GET",
           "codigo": "app.get('/api', (req,res)=>res.json({msg:'ok'}));"
         },
         {
-          "id": "",
+          "id": "ex2",
           "titulo": "Ruta POST",
           "codigo": "app.post('/api', (req,res)=>res.json(req.body));"
         },
         {
-          "id": "",
+          "id": "ex3",
           "titulo": "Middleware",
           "codigo": "app.use((req,res,next)=>{ console.log(req.method, req.url); next(); });"
         }

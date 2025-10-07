@@ -22,25 +22,25 @@ export default function Home() {
         <body className="text-gray-900">
           <article className="flex flex-col w-full">
             <h1 className="text-3xl text-center font-bold text-white">
-              Resumen de tu biblioteca
+              Resumen de la biblioteca
             </h1>
 
             <section className="w-full grid grid-cols-1 md:w-[80%] lg:w-[85%] xl:w-[90%] md:grid-cols-2 lg:grid-cols-3 mx-auto gap-4 pt-10 pb-50">
-              <section className="bg-gray-900 p-5 rounded-lg">
+              <section className="bg-gray-900 flex flex-col justify-center p-5 rounded-lg">
                 <h2 className="text-lg text-gray-300 mb-3">Categorías</h2>
                 <p className="text-3xl font-bold text-blue-400">
                   {totalCategorias}
                 </p>
               </section>
 
-              <section className="bg-gray-900 p-5 rounded-lg">
+              <section className="bg-gray-900 p-5 flex flex-col justify-center rounded-lg">
                 <h2 className="text-lg text-gray-300 mb-3">Snippets</h2>
                 <p className="text-3xl font-bold text-blue-400">
                   {totalSnippets}
                 </p>
               </section>
 
-              <section className="bg-gray-900 p-5 rounded-lg">
+              <section className="bg-gray-900 p-5 flex flex-col justify-center rounded-lg">
                 <h2 className="text-lg text-gray-300 mb-3">
                   Promedio de Snippets por Categoría
                 </h2>

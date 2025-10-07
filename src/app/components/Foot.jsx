@@ -6,7 +6,7 @@ const Foot = () => {
   return (
     <>
       <footer className=" bg-[var(--background)] text-gray-700 dark:text-gray-200 border-t border-[#314a867d] dark:border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-22 py-12">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
             {/* Brand + short description */}
             <div className="flex-1 min-w-0">
@@ -44,22 +44,22 @@ const Foot = () => {
                 <h4 className="text-sm font-semibold">Producto</h4>
                 <ul className="mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-300">
                   <li>
-                    <a className="hover:underline" href="/">
+                    <a className="hover:text-[#0066FF]" href="/">
                       Inicio
                     </a>
                   </li>
                   <li>
-                    <a className="hover:underline" href="/pages/biblioteca">
+                    <a className="hover:text-[#0066FF]" href="/pages/biblioteca">
                       Biblioteca
                     </a>
                   </li>
                        <li>
-                    <a className="hover:underline" href="/pages/favoritos">
+                    <a className="hover:text-[#0066FF]" href="/pages/favoritos">
                       Favoritos
                     </a>
                   </li>
                        <li>
-                    <a className="hover:underline" href="/pages/agregar">
+                    <a className="hover:text-[#0066FF]" href="/pages/agregar">
                       Agregar
                     </a>
                   </li>
