@@ -21,7 +21,7 @@ const Nav = () => {
     <>
       {/* SIDEBAR - visible desde md */}
       <aside
-        className={`hidden md:flex md:flex-col bg-gray-900 z-99 text-white h-screen fixed left-0 top-0 p-4 space-y-6  ${
+        className={`hidden md:flex md:flex-col transition-all duration-100 bg-gray-900 z-99 text-white h-screen fixed left-0 top-0 p-4 space-y-6  ${
           collapsed ? "w-15" : "w-60"
         }`}
       >
@@ -74,8 +74,28 @@ const Nav = () => {
 
         {/* Links */}
         <ul className="space-y-5">
+          {/* Inicio */}
+          <li className="relative group">
+            <a
+              href="/"
+              className={`flex items-center ${
+                collapsed ? "justify-center" : "justify-start space-x-3"
+              } hover:text-blue-400`}
+            >
+              <span>🏠</span>
+              {!collapsed && <span>Inicio</span>}
+            </a>
+
+            {/* Tooltip visible solo si está colapsado */}
+            {collapsed && (
+              <span className="absolute left-full ml-3 bottom-0 top-0 px-3 py-0.5 text-sm bg-gray-800 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Inicio
+              </span>
+            )}
+          </li>
+
+          {/* Resto de las páginas */}
           {[
-            { href: "/", icon: "🏠", label: "Inicio" },
             { href: "/pages/biblioteca", icon: "📚", label: "Biblioteca" },
             { href: "/pages/favoritos", icon: "⭐", label: "Favoritos" },
             { href: "/pages/agregar", icon: "➕", label: "Agregar" },
@@ -85,13 +105,12 @@ const Nav = () => {
                 href={href}
                 className={`flex items-center ${
                   collapsed ? "justify-center" : "justify-start space-x-3"
-                } hover:text-blue-400`}
+                } hover:text-white`}
               >
                 <span>{icon}</span>
                 {!collapsed && <span>{label}</span>}
               </Link>
 
-              {/* Tooltip visible solo si está colapsado */}
               {collapsed && (
                 <span className="absolute left-full ml-3 bottom-0 top-0 px-3 py-0.5 text-sm bg-gray-800 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                   {label}
